@@ -1,0 +1,37 @@
+Criar o arquivo Dockerfile na raiz do projeto
+
+FROM openjdk:8-jdk-alpine
+COPY target/app-api-*.jar app.jar
+ENTRYPOINT ["java", "-jar", "/app.jar"]
+
+
+-------------------------------------------------------------
+
+
+Comando para o Docker criar a imagem (local)
+Estando na raiz do projeto
+
+docker build -t williammian/appapi .
+
+ -t é para nomear a imagem
+
+ . (espaço ponto) é para pegar o diretório raiz, atual
+ 
+
+--------------------------------------------------------------
+
+
+Rodando a aplicação via Docker diretamente no terminal acessando bd criado no host
+
+docker run -p 8080:8080 -e DATABASE_URL="jdbc:mysql://localhost:3306/app?createDatabaseIfNotExist=true&useSSL=false&useTimezone=true&serverTimezone=America/Sao_Paulo&allowPublicKeyRetrieval=true" -e DATABASE_USERNAME="user" -e DATABASE_PASSWORD="user123" williammian/appapi
+
+
+--------------------------------------------------------------
+
+
+Rodando a aplicação via Docker diretamente no terminal acessando bd criado via docker
+
+docker run -p 8080:8080 -e DATABASE_URL="jdbc:mysql://app-bd:3306/app?createDatabaseIfNotExist=true&useSSL=false&useTimezone=true&serverTimezone=America/Sao_Paulo&allowPublicKeyRetrieval=true" -e DATABASE_USERNAME="user" -e DATABASE_PASSWORD="user123" --network bd_default williammian/appapi
+
+
+---------------------------------------------------------------

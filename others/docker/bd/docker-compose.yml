@@ -1,0 +1,19 @@
+version: '3.0'
+services:
+
+  bd:
+    container_name: app-bd
+    image: mysql:8
+    healthcheck:
+      test: mysql --protocol=socket -hlocalhost -uroot -p$$MYSQL_ROOT_PASSWORD -e 'SELECT 1'
+      interval: 20s
+      timeout: 10s
+      retries: 120
+    environment:
+      MYSQL_ROOT_PASSWORD: "root123"
+      MYSQL_USER: "user"
+      MYSQL_PASSWORD: "user123"
+      MYSQL_DATABASE: "app"
+      MYSQL_ROOT_HOST: "%"
+    ports:
+      - 3306:3306
