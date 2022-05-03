@@ -20,7 +20,7 @@ public class AppApiApplication {
 	public static void main(String[] args) {
 		logger.info("Starting server App-Api ...");
 		
-		System.setProperty("spring.profiles.active", "prod");
+		System.setProperty("spring.profiles.active", "dev");
 		
 		SpringApplication.run(AppApiApplication.class, args);
 	}
