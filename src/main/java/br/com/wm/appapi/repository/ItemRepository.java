@@ -10,4 +10,6 @@ public interface ItemRepository extends JpaRepository<Item, Long> {
 	
 	Page<Item> findByCodigo(String codigo, Pageable pageable);
 	
+	Page<Item> findByCodigoContainingOrDescricaoContaining(String codigo, String descricao, Pageable pageable);
+	
 }

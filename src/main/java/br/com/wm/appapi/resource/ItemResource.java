@@ -33,9 +33,9 @@ public class ItemResource {
 	private ItemService itemService;
 
 	@GetMapping()
-	public Page<Item> listar(@RequestParam(required = false) String codigo, 
+	public Page<Item> listar(@RequestParam(required = false) String codigoDescricao, 
 			@PageableDefault(sort = "codigo", direction = Direction.ASC, page = 0, size = 10) Pageable pageable) {
-		return itemService.listar(codigo, pageable);
+		return itemService.listar(codigoDescricao, pageable);
 	}
 	
 	@PostMapping()

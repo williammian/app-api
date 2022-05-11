@@ -2,6 +2,7 @@ package br.com.wm.appapi.service;
 
 import java.util.Optional;
 
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
@@ -9,6 +10,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import br.com.wm.appapi.exception.ValidacaoException;
 import br.com.wm.appapi.model.Item;
 import br.com.wm.appapi.repository.ItemRepository;
 
@@ -18,12 +20,12 @@ public class ItemService {
 	@Autowired
 	private ItemRepository itemRepository;
 	
-	public Page<Item> listar(String codigo, Pageable pageable) {
+	public Page<Item> listar(String codigoDescricao, Pageable pageable) {
 		Page<Item> itens = null;
-		if(codigo == null) {
+		if(StringUtils.isEmpty(codigoDescricao)) {
 			itens = itemRepository.findAll(pageable);
 		}else {
-			itens = itemRepository.findByCodigo(codigo, pageable);
+			itens = itemRepository.findByCodigoContainingOrDescricaoContaining(codigoDescricao, codigoDescricao, pageable);
 		}
 		return itens;
 	}

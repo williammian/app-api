@@ -2,6 +2,8 @@ package br.com.wm.appapi.security;
 
 import java.util.Date;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Service;
@@ -10,10 +12,15 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import br.com.wm.appapi.dto.UsuarioDto;
+import br.com.wm.appapi.exception.handler.AppApiExceptionHandler;
 import br.com.wm.appapi.model.Usuario;
 import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.ExpiredJwtException;
 import io.jsonwebtoken.Jwts;
+import io.jsonwebtoken.MalformedJwtException;
 import io.jsonwebtoken.SignatureAlgorithm;
+import io.jsonwebtoken.SignatureException;
+import io.jsonwebtoken.UnsupportedJwtException;
 
 @Service
 public class TokenService {
@@ -23,6 +30,8 @@ public class TokenService {
 	
 	@Value("${appapi.jwt.secret}")
 	private String secret;
+	
+	private static final Logger logger = LoggerFactory.getLogger(TokenService.class);
 	
 	public String gerarToken(Authentication authentication) {
 		Usuario usuarioLogado = (Usuario) authentication.getPrincipal();
@@ -44,9 +53,20 @@ public class TokenService {
 		try {
 			Jwts.parser().setSigningKey(this.secret).parseClaimsJws(token);
 			return true;
+		} catch (SignatureException e) {
+			logger.error("Invalid JWT signature: {}", e.getMessage());
+		} catch (MalformedJwtException e) {
+			logger.error("Invalid JWT token: {}", e.getMessage());
+		} catch (ExpiredJwtException e) {
+			logger.error("JWT token is expired: {}", e.getMessage());
+		} catch (UnsupportedJwtException e) {
+			logger.error("JWT token is unsupported: {}", e.getMessage());
+		} catch (IllegalArgumentException e) {
+			logger.error("JWT claims string is empty: {}", e.getMessage());
 		}catch (Exception e) {
-			return false;
+			e.printStackTrace();
 		}
+		return false;
 	}
 	
 	public UsuarioDto getUser(String token) {
