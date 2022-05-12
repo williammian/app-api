@@ -33,9 +33,9 @@ uniqueConstraints = { @UniqueConstraint(name = "uk_item_tipo_codigo", columnName
 public class Item {
 	
 	public static final int TIPO_MATERIAL = 0;
-	public static final int TIPO_PRODUTO = 0;
-	public static final int TIPO_MERCADORIA = 0;
-	public static final int TIPO_SERVICO = 0;
+	public static final int TIPO_PRODUTO = 1;
+	public static final int TIPO_MERCADORIA = 2;
+	public static final int TIPO_SERVICO = 3;
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
