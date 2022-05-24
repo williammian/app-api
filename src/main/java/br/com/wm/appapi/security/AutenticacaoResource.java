@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import br.com.wm.appapi.dto.LoginForm;
 import br.com.wm.appapi.dto.TokenDto;
+import br.com.wm.appapi.exception.ValidacaoException;
 
 @RestController
 @RequestMapping("/auth")
@@ -34,7 +35,7 @@ public class AutenticacaoResource {
 			String token = tokenService.gerarToken(authentication);
 			return ResponseEntity.ok(new TokenDto(token, "Bearer"));
 		}catch (AuthenticationException e) {
-			return ResponseEntity.badRequest().build();
+			throw new ValidacaoException("Usuário ou senha inválidos.");
 		}
 	}
 
