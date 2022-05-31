@@ -22,10 +22,11 @@ public class AppApiApplication {
 		
 		System.setProperty("spring.profiles.active", "dev");
 		
-		// prod
+		// spring.profiles.active = prod
 		//System.setProperty("DATABASE_URL", "jdbc:mysql://localhost:3306/app?createDatabaseIfNotExist=true&useSSL=false&useTimezone=true&serverTimezone=America/Sao_Paulo&allowPublicKeyRetrieval=true");
 		//System.setProperty("DATABASE_USERNAME", "user");
 		//System.setProperty("DATABASE_PASSWORD", "user123");
+		//System.setProperty("SERVER_PORT", "8080");
 		
 		SpringApplication.run(AppApiApplication.class, args);
 	}
