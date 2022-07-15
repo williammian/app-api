@@ -1,16 +1,16 @@
-2022-05-31 08:48:26.535  INFO 6104 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Starting AppApiApplication using Java 1.8.0_281 on DESKTOP-E4FEAF1 with PID 6104 (C:\Fontes\FontesSTS\app-api\target\classes started by User in C:\Fontes\FontesSTS\app-api)
-2022-05-31 08:48:26.877  INFO 6104 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : The following 1 profile is active: "dev"
-2022-05-31 08:48:27.597  INFO 6104 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-05-31 08:48:27.598  INFO 6104 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-05-31 08:48:34.345  INFO 6104 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-05-31 08:48:34.773  INFO 6104 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 384 ms. Found 2 JPA repository interfaces.
-2022-05-31 08:48:48.280  INFO 6104 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-05-31 08:48:48.571  INFO 6104 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-05-31 08:48:48.572  INFO 6104 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-05-31 08:48:49.321  INFO 6104 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-05-31 08:48:49.322  INFO 6104 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 21721 ms
-2022-05-31 08:48:49.560  INFO 6104 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-05-31 08:48:55.603 ERROR 6104 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
+2022-07-15 09:13:25.166  INFO 10436 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Starting AppApiApplication using Java 1.8.0_171 on DESKTOP-E4FEAF1 with PID 10436 (C:\Fontes\FontesSTS\app-api\target\classes started by User in C:\Fontes\FontesSTS\app-api)
+2022-07-15 09:13:25.176  INFO 10436 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : The following 1 profile is active: "dev"
+2022-07-15 09:13:25.291  INFO 10436 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-15 09:13:25.292  INFO 10436 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-15 09:13:27.169  INFO 10436 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-15 09:13:27.294  INFO 10436 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 95 ms. Found 2 JPA repository interfaces.
+2022-07-15 09:13:29.077  INFO 10436 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-15 09:13:29.104  INFO 10436 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-15 09:13:29.105  INFO 10436 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-15 09:13:29.221  INFO 10436 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-15 09:13:29.222  INFO 10436 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3929 ms
+2022-07-15 09:13:29.305  INFO 10436 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-15 09:13:34.631 ERROR 10436 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
 
 com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
 
@@ -29,22 +29,22 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) [HikariCP-4.0.3.jar:na]
 	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) [HikariCP-4.0.3.jar:na]
 	at org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration.lambda$logDataSources$0(H2ConsoleAutoConfiguration.java:77) [spring-boot-autoconfigure-2.6.6.jar:2.6.6]
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193) ~[na:1.8.0_281]
-	at java.util.ArrayList.forEach(ArrayList.java:1259) ~[na:1.8.0_281]
-	at java.util.stream.SortedOps$RefSortingSink.end(SortedOps.java:390) ~[na:1.8.0_281]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[na:1.8.0_281]
-	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[na:1.8.0_281]
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:483) ~[na:1.8.0_281]
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472) ~[na:1.8.0_281]
-	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708) ~[na:1.8.0_281]
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:1.8.0_281]
-	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499) ~[na:1.8.0_281]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193) ~[na:1.8.0_171]
+	at java.util.ArrayList.forEach(ArrayList.java:1257) ~[na:1.8.0_171]
+	at java.util.stream.SortedOps$RefSortingSink.end(SortedOps.java:390) ~[na:1.8.0_171]
+	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[na:1.8.0_171]
+	at java.util.stream.Sink$ChainedReference.end(Sink.java:258) ~[na:1.8.0_171]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482) ~[na:1.8.0_171]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471) ~[na:1.8.0_171]
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708) ~[na:1.8.0_171]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:1.8.0_171]
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499) ~[na:1.8.0_171]
 	at org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration.logDataSources(H2ConsoleAutoConfiguration.java:83) [spring-boot-autoconfigure-2.6.6.jar:2.6.6]
 	at org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration.h2Console(H2ConsoleAutoConfiguration.java:70) [spring-boot-autoconfigure-2.6.6.jar:2.6.6]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_281]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_281]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_281]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_281]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_171]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_171]
 	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.18.jar:5.3.18]
 	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.18.jar:5.3.18]
 	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.18.jar:5.3.18]
@@ -67,17 +67,17 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
 	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
 	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_281]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_171]
 	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
-	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) ~[na:1.8.0_281]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) ~[na:1.8.0_171]
 	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
 	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:835) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
 	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
 	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_281]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_171]
 	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
-	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) ~[na:1.8.0_281]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) ~[na:1.8.0_171]
 	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
 	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:263) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
 	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
@@ -99,19 +99,19 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-2.6.6.jar:2.6.6]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312) ~[spring-boot-2.6.6.jar:2.6.6]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-2.6.6.jar:2.6.6]
-	at br.com.wm.appapi.AppApiApplication.main(AppApiApplication.java:30) ~[classes/:na]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_281]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_281]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_281]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_281]
+	at br.com.wm.appapi.AppApiApplication.main(AppApiApplication.java:31) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_171]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_171]
 	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.6.jar:2.6.6]
 Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_281]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_281]
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_281]
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_281]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_171]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_171]
 	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61) ~[mysql-connector-java-8.0.28.jar:8.0.28]
 	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105) ~[mysql-connector-java-8.0.28.jar:8.0.28]
 	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151) ~[mysql-connector-java-8.0.28.jar:8.0.28]
@@ -122,216 +122,958 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:819) ~[mysql-connector-java-8.0.28.jar:8.0.28]
 	... 87 common frames omitted
 Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_281]
-	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:81) ~[na:1.8.0_281]
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476) ~[na:1.8.0_281]
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218) ~[na:1.8.0_281]
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200) ~[na:1.8.0_281]
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162) ~[na:1.8.0_281]
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394) ~[na:1.8.0_281]
-	at java.net.Socket.connect(Socket.java:606) ~[na:1.8.0_281]
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_171]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_171]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_171]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_171]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_171]
 	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:156) ~[mysql-connector-java-8.0.28.jar:8.0.28]
 	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63) ~[mysql-connector-java-8.0.28.jar:8.0.28]
 	... 90 common frames omitted
 
-2022-05-31 08:48:56.747  INFO 6104 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-05-31 08:52:55.779  INFO 15112 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Starting AppApiApplication using Java 1.8.0_281 on DESKTOP-E4FEAF1 with PID 15112 (C:\Fontes\FontesSTS\app-api\target\classes started by User in C:\Fontes\FontesSTS\app-api)
-2022-05-31 08:52:55.781  INFO 15112 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : The following 1 profile is active: "dev"
-2022-05-31 08:52:55.953  INFO 15112 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-05-31 08:52:55.953  INFO 15112 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-05-31 08:52:59.430  INFO 15112 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-05-31 08:53:00.189  INFO 15112 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 748 ms. Found 2 JPA repository interfaces.
-2022-05-31 08:53:09.459  INFO 15112 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-05-31 08:53:09.761  INFO 15112 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-05-31 08:53:09.763  INFO 15112 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-05-31 08:53:10.182  INFO 15112 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-05-31 08:53:10.183  INFO 15112 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 14230 ms
-2022-05-31 08:53:10.317  INFO 15112 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-05-31 08:53:16.118  INFO 15112 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-05-31 08:53:16.243  INFO 15112 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/app?createDatabaseIfNotExist=true&useSSL=false&useTimezone=true&serverTimezone=America/Sao_Paulo&allowPublicKeyRetrieval=true'
-2022-05-31 08:53:16.613  INFO 15112 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
-2022-05-31 08:53:16.615  INFO 15112 --- [restartedMain] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:mysql://localhost:3306/app (MySQL 8.0)
-2022-05-31 08:53:17.004  INFO 15112 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.166s)
-2022-05-31 08:53:17.044  INFO 15112 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `app`: 02
-2022-05-31 08:53:17.048  INFO 15112 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `app` is up to date. No migration necessary.
-2022-05-31 08:53:18.123  INFO 15112 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-05-31 08:53:18.610  INFO 15112 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
-2022-05-31 08:53:20.020  INFO 15112 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-05-31 08:53:21.594  INFO 15112 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
-2022-05-31 08:53:25.459  INFO 15112 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-05-31 08:53:25.552  INFO 15112 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-05-31 08:53:25.583  INFO 15112 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Server running in UTC timezone :Tue May 31 08:53:25 BRT 2022
-2022-05-31 08:53:27.478  WARN 15112 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-05-31 08:53:29.405  INFO 15112 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
-2022-05-31 08:53:30.078  INFO 15112 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-05-31 08:53:30.325  INFO 15112 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-05-31 08:53:30.336  INFO 15112 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Started AppApiApplication in 34.993 seconds (JVM running for 35.515)
-2022-05-31 08:53:47.054  INFO 15112 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-05-31 08:53:47.055  INFO 15112 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-05-31 08:53:47.057  INFO 15112 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2022-05-31 08:53:47.418 ERROR 15112 --- [http-nio-8080-exec-1] br.com.wm.appapi.security.TokenService   : JWT claims string is empty: JWT String argument cannot be null or empty.
-2022-05-31 08:53:48.731 ERROR 15112 --- [http-nio-8080-exec-1] b.c.w.a.e.h.AppApiExceptionHandler       : Erro
+2022-07-15 09:13:34.939  INFO 10436 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-15 09:13:40.075 ERROR 10436 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
 
-br.com.wm.appapi.exception.ValidacaoException: Usuário ou senha inválidos.
-	at br.com.wm.appapi.security.AutenticacaoResource.autenticar(AutenticacaoResource.java:38) ~[classes/:na]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_281]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_281]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_281]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_281]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.18.jar:5.3.18]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.18.jar:5.3.18]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.18.jar:5.3.18]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.18.jar:5.3.18]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.18.jar:5.3.18]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.18.jar:5.3.18]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.18.jar:5.3.18]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.18.jar:5.3.18]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.3.18.jar:5.3.18]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) [spring-webmvc-5.3.18.jar:5.3.18]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) [tomcat-embed-core-9.0.60.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.3.18.jar:5.3.18]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [tomcat-embed-core-9.0.60.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [tomcat-embed-core-9.0.60.jar:9.0.60]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.60.jar:9.0.60]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.60.jar:9.0.60]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.60.jar:9.0.60]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.60.jar:9.0.60]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327) [spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115) [spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81) [spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122) [spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116) [spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126) [spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81) [spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109) [spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149) [spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) [spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.6.2.jar:5.6.2]
-	at br.com.wm.appapi.security.AutenticacaoViaTokenFilter.doFilterInternal(AutenticacaoViaTokenFilter.java:39) [classes/:na]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) [spring-web-5.3.18.jar:5.3.18]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) [spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) [spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) [spring-web-5.3.18.jar:5.3.18]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) [spring-web-5.3.18.jar:5.3.18]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) [spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) [spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) [spring-web-5.3.18.jar:5.3.18]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110) [spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80) [spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55) [spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) [spring-web-5.3.18.jar:5.3.18]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) [spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) [spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354) [spring-web-5.3.18.jar:5.3.18]
-	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267) [spring-web-5.3.18.jar:5.3.18]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.60.jar:9.0.60]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.60.jar:9.0.60]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.3.18.jar:5.3.18]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) [spring-web-5.3.18.jar:5.3.18]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.60.jar:9.0.60]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.60.jar:9.0.60]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.3.18.jar:5.3.18]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) [spring-web-5.3.18.jar:5.3.18]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.60.jar:9.0.60]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.60.jar:9.0.60]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.3.18.jar:5.3.18]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) [spring-web-5.3.18.jar:5.3.18]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.60.jar:9.0.60]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.60.jar:9.0.60]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [tomcat-embed-core-9.0.60.jar:9.0.60]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.60.jar:9.0.60]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.60.jar:9.0.60]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.60.jar:9.0.60]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.60.jar:9.0.60]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.60.jar:9.0.60]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [tomcat-embed-core-9.0.60.jar:9.0.60]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-embed-core-9.0.60.jar:9.0.60]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.60.jar:9.0.60]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889) [tomcat-embed-core-9.0.60.jar:9.0.60]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-embed-core-9.0.60.jar:9.0.60]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.60.jar:9.0.60]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.60.jar:9.0.60]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.60.jar:9.0.60]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.60.jar:9.0.60]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_281]
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
 
-2022-05-31 08:53:48.865  WARN 15112 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [br.com.wm.appapi.exception.ValidacaoException: Usuário ou senha inválidos.]
-2022-05-31 08:54:05.234 ERROR 15112 --- [http-nio-8080-exec-2] br.com.wm.appapi.security.TokenService   : JWT claims string is empty: JWT String argument cannot be null or empty.
-2022-05-31 08:54:39.796 ERROR 15112 --- [http-nio-8080-exec-4] br.com.wm.appapi.security.TokenService   : JWT claims string is empty: JWT String argument cannot be null or empty.
-2022-05-31 08:58:03.821 ERROR 15112 --- [http-nio-8080-exec-6] br.com.wm.appapi.security.TokenService   : JWT claims string is empty: JWT String argument cannot be null or empty.
-2022-05-31 08:58:53.881 ERROR 15112 --- [http-nio-8080-exec-8] br.com.wm.appapi.security.TokenService   : JWT claims string is empty: JWT String argument cannot be null or empty.
-2022-05-31 09:00:05.748 ERROR 15112 --- [http-nio-8080-exec-10] br.com.wm.appapi.security.TokenService   : JWT claims string is empty: JWT String argument cannot be null or empty.
-2022-05-31 09:01:10.849 ERROR 15112 --- [http-nio-8080-exec-2] br.com.wm.appapi.security.TokenService   : JWT claims string is empty: JWT String argument cannot be null or empty.
-2022-05-31 09:07:06.349  INFO 8740 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Starting AppApiApplication using Java 1.8.0_281 on DESKTOP-E4FEAF1 with PID 8740 (C:\Fontes\FontesSTS\app-api\target\classes started by User in C:\Fontes\FontesSTS\app-api)
-2022-05-31 09:07:06.362  INFO 8740 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : The following 1 profile is active: "dev"
-2022-05-31 09:07:06.529  INFO 8740 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-05-31 09:07:06.530  INFO 8740 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-05-31 09:07:10.689  INFO 8740 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-05-31 09:07:10.799  INFO 8740 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 82 ms. Found 2 JPA repository interfaces.
-2022-05-31 09:07:13.285  INFO 8740 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-05-31 09:07:13.340  INFO 8740 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-05-31 09:07:13.341  INFO 8740 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-05-31 09:07:13.447  INFO 8740 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-05-31 09:07:13.447  INFO 8740 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6916 ms
-2022-05-31 09:07:13.552  INFO 8740 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-05-31 09:07:14.046  INFO 8740 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-05-31 09:07:14.056  INFO 8740 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/app?createDatabaseIfNotExist=true&useSSL=false&useTimezone=true&serverTimezone=America/Sao_Paulo&allowPublicKeyRetrieval=true'
-2022-05-31 09:07:14.528  INFO 8740 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
-2022-05-31 09:07:14.529  INFO 8740 --- [restartedMain] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:mysql://localhost:3306/app (MySQL 8.0)
-2022-05-31 09:07:14.662  INFO 8740 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.055s)
-2022-05-31 09:07:14.684  INFO 8740 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `app`: 02
-2022-05-31 09:07:14.687  INFO 8740 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `app` is up to date. No migration necessary.
-2022-05-31 09:07:14.980  INFO 8740 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-05-31 09:07:15.086  INFO 8740 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
-2022-05-31 09:07:15.539  INFO 8740 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-05-31 09:07:15.804  INFO 8740 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
-2022-05-31 09:07:17.085  INFO 8740 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-05-31 09:07:17.109  INFO 8740 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-05-31 09:07:17.127  INFO 8740 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Server running in UTC timezone :Tue May 31 09:07:17 BRT 2022
-2022-05-31 09:07:18.083  WARN 8740 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-05-31 09:07:18.707  INFO 8740 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
-2022-05-31 09:07:19.019  INFO 8740 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-05-31 09:07:19.146  INFO 8740 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-05-31 09:07:19.158  INFO 8740 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Started AppApiApplication in 13.773 seconds (JVM running for 15.126)
-2022-05-31 09:07:36.445  INFO 9068 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Starting AppApiApplication using Java 1.8.0_281 on DESKTOP-E4FEAF1 with PID 9068 (C:\Fontes\FontesSTS\app-api\target\classes started by User in C:\Fontes\FontesSTS\app-api)
-2022-05-31 09:07:36.447  INFO 9068 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : The following 1 profile is active: "dev"
-2022-05-31 09:07:36.512  INFO 9068 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-05-31 09:07:36.512  INFO 9068 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-05-31 09:07:37.355  INFO 9068 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-05-31 09:07:37.425  INFO 9068 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 2 JPA repository interfaces.
-2022-05-31 09:07:38.623  INFO 9068 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2022-05-31 09:07:38.635  INFO 9068 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-05-31 09:07:38.635  INFO 9068 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-05-31 09:07:38.721  INFO 9068 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-05-31 09:07:38.722  INFO 9068 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2209 ms
-2022-05-31 09:07:38.765  INFO 9068 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-05-31 09:07:38.981  INFO 9068 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-05-31 09:07:38.991  INFO 9068 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/app?createDatabaseIfNotExist=true&useSSL=false&useTimezone=true&serverTimezone=America/Sao_Paulo&allowPublicKeyRetrieval=true'
-2022-05-31 09:07:39.242  INFO 9068 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
-2022-05-31 09:07:39.243  INFO 9068 --- [restartedMain] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:mysql://localhost:3306/app (MySQL 8.0)
-2022-05-31 09:07:39.512  INFO 9068 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.044s)
-2022-05-31 09:07:39.538  INFO 9068 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `app`: 02
-2022-05-31 09:07:39.540  INFO 9068 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `app` is up to date. No migration necessary.
-2022-05-31 09:07:39.653  INFO 9068 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-05-31 09:07:39.715  INFO 9068 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
-2022-05-31 09:07:39.902  INFO 9068 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-05-31 09:07:40.042  INFO 9068 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
-2022-05-31 09:07:40.823  INFO 9068 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-05-31 09:07:40.833  INFO 9068 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-05-31 09:07:40.839  INFO 9068 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Server running in UTC timezone :Tue May 31 09:07:40 BRT 2022
-2022-05-31 09:07:41.449  WARN 9068 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-05-31 09:07:41.877  INFO 9068 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
-2022-05-31 09:07:42.116  INFO 9068 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-05-31 09:07:42.151  INFO 9068 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
-2022-05-31 09:07:42.163  INFO 9068 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Started AppApiApplication in 6.149 seconds (JVM running for 6.649)
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:829) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:449) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:242) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) [HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561) [HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) [HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) [HikariCP-4.0.3.jar:na]
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:52) [flyway-core-8.0.5.jar:na]
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:74) [flyway-core-8.0.5.jar:na]
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:143) [flyway-core-8.0.5.jar:na]
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:124) [flyway-core-8.0.5.jar:na]
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66) [spring-boot-autoconfigure-2.6.6.jar:2.6.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) [spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) [spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) [spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) [spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) [spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) [spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) [spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) [spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) [spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-2.6.6.jar:2.6.6]
+	at br.com.wm.appapi.AppApiApplication.main(AppApiApplication.java:31) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_171]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_171]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.6.jar:2.6.6]
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_171]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_171]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:120) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:949) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:819) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	... 40 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_171]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_171]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_171]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_171]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_171]
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:156) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	... 43 common frames omitted
+
+2022-07-15 09:13:40.093  WARN 10436 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08S01
+Error Code : 0
+Message    : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+
+2022-07-15 09:13:40.106  INFO 10436 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-07-15 09:13:40.132  INFO 10436 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-15 09:13:40.201 ERROR 10436 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08S01
+Error Code : 0
+Message    : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) [spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) [spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312) [spring-boot-2.6.6.jar:2.6.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) [spring-boot-2.6.6.jar:2.6.6]
+	at br.com.wm.appapi.AppApiApplication.main(AppApiApplication.java:31) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_171]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_171]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.6.6.jar:2.6.6]
+Caused by: org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : 08S01
+Error Code : 0
+Message    : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:67) ~[flyway-core-8.0.5.jar:na]
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:74) ~[flyway-core-8.0.5.jar:na]
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:143) ~[flyway-core-8.0.5.jar:na]
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:124) ~[flyway-core-8.0.5.jar:na]
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66) ~[spring-boot-autoconfigure-2.6.6.jar:2.6.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.18.jar:5.3.18]
+	... 23 common frames omitted
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:829) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:449) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:242) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-4.0.3.jar:na]
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:52) ~[flyway-core-8.0.5.jar:na]
+	... 29 common frames omitted
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_171]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_171]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:120) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:949) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:819) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	... 40 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_171]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_171]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_171]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_171]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_171]
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:156) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	... 43 common frames omitted
+
+2022-07-15 09:14:16.149  INFO 1352 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Starting AppApiApplication using Java 1.8.0_171 on DESKTOP-E4FEAF1 with PID 1352 (C:\Fontes\FontesSTS\app-api\target\classes started by User in C:\Fontes\FontesSTS\app-api)
+2022-07-15 09:14:16.150  INFO 1352 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : The following 1 profile is active: "dev"
+2022-07-15 09:14:16.237  INFO 1352 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-15 09:14:16.238  INFO 1352 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-15 09:14:17.382  INFO 1352 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-15 09:14:17.483  INFO 1352 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 85 ms. Found 2 JPA repository interfaces.
+2022-07-15 09:14:18.898  INFO 1352 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-15 09:14:18.913  INFO 1352 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-15 09:14:18.913  INFO 1352 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-15 09:14:19.015  INFO 1352 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-15 09:14:19.016  INFO 1352 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2777 ms
+2022-07-15 09:14:19.059  INFO 1352 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-15 09:14:19.849  INFO 1352 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-15 09:14:19.862  INFO 1352 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/app?createDatabaseIfNotExist=true&useSSL=false&useTimezone=true&serverTimezone=America/Sao_Paulo&allowPublicKeyRetrieval=true'
+2022-07-15 09:14:20.238  INFO 1352 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
+2022-07-15 09:14:20.239  INFO 1352 --- [restartedMain] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:mysql://localhost:3306/app (MySQL 8.0)
+2022-07-15 09:14:20.399  INFO 1352 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.044s)
+2022-07-15 09:14:20.418  INFO 1352 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `app`: 02
+2022-07-15 09:14:20.420  INFO 1352 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `app` is up to date. No migration necessary.
+2022-07-15 09:14:20.554  INFO 1352 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-15 09:14:20.642  INFO 1352 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-07-15 09:14:20.919  INFO 1352 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-15 09:14:21.117  INFO 1352 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-07-15 09:14:22.095  INFO 1352 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-15 09:14:22.110  INFO 1352 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-15 09:14:22.117  INFO 1352 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Server running in UTC timezone :Fri Jul 15 09:14:22 BRT 2022
+2022-07-15 09:14:22.809  WARN 1352 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-15 09:14:23.360  INFO 1352 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-07-15 09:14:23.622  INFO 1352 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-15 09:14:23.678  INFO 1352 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-15 09:14:23.689  INFO 1352 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Started AppApiApplication in 8.139 seconds (JVM running for 8.989)
+2022-07-15 09:14:54.536  INFO 1352 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-15 09:14:54.537  INFO 1352 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-15 09:14:54.538  INFO 1352 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-07-15 09:14:54.577 ERROR 1352 --- [http-nio-8080-exec-1] br.com.wm.appapi.security.TokenService   : JWT claims string is empty: JWT String argument cannot be null or empty.
+2022-07-15 09:14:54.753 ERROR 1352 --- [http-nio-8080-exec-2] br.com.wm.appapi.security.TokenService   : JWT claims string is empty: JWT String argument cannot be null or empty.
+2022-07-15 09:30:46.882  INFO 12552 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Starting AppApiApplication using Java 1.8.0_171 on DESKTOP-E4FEAF1 with PID 12552 (C:\Fontes\FontesSTS\app-api\target\classes started by User in C:\Fontes\FontesSTS\app-api)
+2022-07-15 09:30:46.883  INFO 12552 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : The following 1 profile is active: "dev"
+2022-07-15 09:30:46.940  INFO 12552 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-15 09:30:46.940  INFO 12552 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-15 09:30:47.755  INFO 12552 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-15 09:30:47.829  INFO 12552 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 2 JPA repository interfaces.
+2022-07-15 09:30:49.000  INFO 12552 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-15 09:30:49.012  INFO 12552 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-15 09:30:49.012  INFO 12552 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-15 09:30:49.091  INFO 12552 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-15 09:30:49.092  INFO 12552 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2151 ms
+2022-07-15 09:30:49.138  INFO 12552 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-15 09:30:49.354  INFO 12552 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-15 09:30:49.364  INFO 12552 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/app?createDatabaseIfNotExist=true&useSSL=false&useTimezone=true&serverTimezone=America/Sao_Paulo&allowPublicKeyRetrieval=true'
+2022-07-15 09:30:49.599  INFO 12552 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
+2022-07-15 09:30:49.600  INFO 12552 --- [restartedMain] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:mysql://localhost:3306/app (MySQL 8.0)
+2022-07-15 09:30:49.685  INFO 12552 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.031s)
+2022-07-15 09:30:49.703  INFO 12552 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `app`: 02
+2022-07-15 09:30:49.706  INFO 12552 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `app` is up to date. No migration necessary.
+2022-07-15 09:30:49.818  INFO 12552 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-15 09:30:49.874  INFO 12552 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-07-15 09:30:50.052  INFO 12552 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-15 09:30:50.173  INFO 12552 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-07-15 09:30:50.877  INFO 12552 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-15 09:30:50.889  INFO 12552 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-15 09:30:50.894  INFO 12552 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Server running in UTC timezone :Fri Jul 15 09:30:50 BRT 2022
+2022-07-15 09:30:51.496  WARN 12552 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-15 09:30:51.926  INFO 12552 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-07-15 09:30:52.142  INFO 12552 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-15 09:30:52.176  INFO 12552 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-15 09:30:52.186  INFO 12552 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Started AppApiApplication in 5.705 seconds (JVM running for 6.212)
+2022-07-15 09:31:06.176  INFO 12552 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-15 09:31:06.176  INFO 12552 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-15 09:31:06.178  INFO 12552 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-07-15 09:31:06.211 ERROR 12552 --- [http-nio-8080-exec-1] br.com.wm.appapi.security.TokenService   : JWT claims string is empty: JWT String argument cannot be null or empty.
+2022-07-15 09:31:06.359 ERROR 12552 --- [http-nio-8080-exec-2] br.com.wm.appapi.security.TokenService   : JWT claims string is empty: JWT String argument cannot be null or empty.
+2022-07-15 09:33:15.592 ERROR 12552 --- [http-nio-8080-exec-3] br.com.wm.appapi.security.TokenService   : JWT claims string is empty: JWT String argument cannot be null or empty.
+2022-07-15 09:33:15.621 ERROR 12552 --- [http-nio-8080-exec-4] br.com.wm.appapi.security.TokenService   : JWT claims string is empty: JWT String argument cannot be null or empty.
+2022-07-15 09:33:22.474 ERROR 12552 --- [http-nio-8080-exec-5] br.com.wm.appapi.security.TokenService   : JWT claims string is empty: JWT String argument cannot be null or empty.
+2022-07-15 09:33:22.523 ERROR 12552 --- [http-nio-8080-exec-6] br.com.wm.appapi.security.TokenService   : JWT claims string is empty: JWT String argument cannot be null or empty.
+2022-07-15 09:38:28.599 ERROR 12552 --- [http-nio-8080-exec-9] br.com.wm.appapi.security.TokenService   : JWT claims string is empty: JWT String argument cannot be null or empty.
+2022-07-15 09:38:28.659 ERROR 12552 --- [http-nio-8080-exec-10] br.com.wm.appapi.security.TokenService   : JWT claims string is empty: JWT String argument cannot be null or empty.
+2022-07-15 09:38:37.256 ERROR 12552 --- [http-nio-8080-exec-1] br.com.wm.appapi.security.TokenService   : JWT claims string is empty: JWT String argument cannot be null or empty.
+2022-07-15 09:38:37.286 ERROR 12552 --- [http-nio-8080-exec-2] br.com.wm.appapi.security.TokenService   : JWT claims string is empty: JWT String argument cannot be null or empty.
+2022-07-15 09:38:41.196 ERROR 12552 --- [http-nio-8080-exec-3] br.com.wm.appapi.security.TokenService   : JWT claims string is empty: JWT String argument cannot be null or empty.
+2022-07-15 09:38:41.221 ERROR 12552 --- [http-nio-8080-exec-4] br.com.wm.appapi.security.TokenService   : JWT claims string is empty: JWT String argument cannot be null or empty.
+2022-07-15 09:39:38.201 ERROR 12552 --- [http-nio-8080-exec-5] br.com.wm.appapi.security.TokenService   : JWT claims string is empty: JWT String argument cannot be null or empty.
+2022-07-15 09:39:38.261 ERROR 12552 --- [http-nio-8080-exec-6] br.com.wm.appapi.security.TokenService   : JWT claims string is empty: JWT String argument cannot be null or empty.
+2022-07-15 09:39:45.199 ERROR 12552 --- [http-nio-8080-exec-8] br.com.wm.appapi.security.TokenService   : JWT claims string is empty: JWT String argument cannot be null or empty.
+2022-07-15 09:39:45.222 ERROR 12552 --- [http-nio-8080-exec-7] br.com.wm.appapi.security.TokenService   : JWT claims string is empty: JWT String argument cannot be null or empty.
+2022-07-15 09:39:59.885 ERROR 12552 --- [http-nio-8080-exec-9] br.com.wm.appapi.security.TokenService   : JWT claims string is empty: JWT String argument cannot be null or empty.
+2022-07-15 09:39:59.954 ERROR 12552 --- [http-nio-8080-exec-10] br.com.wm.appapi.security.TokenService   : JWT claims string is empty: JWT String argument cannot be null or empty.
+2022-07-15 09:49:49.510 ERROR 12552 --- [http-nio-8080-exec-1] br.com.wm.appapi.security.TokenService   : JWT claims string is empty: JWT String argument cannot be null or empty.
+2022-07-15 09:49:49.566 ERROR 12552 --- [http-nio-8080-exec-2] br.com.wm.appapi.security.TokenService   : JWT claims string is empty: JWT String argument cannot be null or empty.
+2022-07-15 09:51:27.367 ERROR 12552 --- [http-nio-8080-exec-3] br.com.wm.appapi.security.TokenService   : JWT claims string is empty: JWT String argument cannot be null or empty.
+2022-07-15 09:51:28.379 ERROR 12552 --- [http-nio-8080-exec-4] br.com.wm.appapi.security.TokenService   : JWT claims string is empty: JWT String argument cannot be null or empty.
+2022-07-15 09:51:28.440 ERROR 12552 --- [http-nio-8080-exec-5] br.com.wm.appapi.security.TokenService   : JWT claims string is empty: JWT String argument cannot be null or empty.
+2022-07-15 09:52:51.693 ERROR 12552 --- [http-nio-8080-exec-6] br.com.wm.appapi.security.TokenService   : JWT claims string is empty: JWT String argument cannot be null or empty.
+2022-07-15 09:52:51.772 ERROR 12552 --- [http-nio-8080-exec-8] br.com.wm.appapi.security.TokenService   : JWT claims string is empty: JWT String argument cannot be null or empty.
+2022-07-15 09:52:56.784 ERROR 12552 --- [http-nio-8080-exec-7] br.com.wm.appapi.security.TokenService   : JWT claims string is empty: JWT String argument cannot be null or empty.
+2022-07-15 09:52:56.828 ERROR 12552 --- [http-nio-8080-exec-9] br.com.wm.appapi.security.TokenService   : JWT claims string is empty: JWT String argument cannot be null or empty.
+2022-07-15 10:01:09.709 ERROR 12552 --- [http-nio-8080-exec-10] br.com.wm.appapi.security.TokenService   : JWT claims string is empty: JWT String argument cannot be null or empty.
+2022-07-15 10:09:21.630 ERROR 12552 --- [http-nio-8080-exec-2] br.com.wm.appapi.security.TokenService   : JWT claims string is empty: JWT String argument cannot be null or empty.
+2022-07-15 10:09:21.663 ERROR 12552 --- [http-nio-8080-exec-3] br.com.wm.appapi.security.TokenService   : JWT claims string is empty: JWT String argument cannot be null or empty.
+2022-07-15 10:09:24.861 ERROR 12552 --- [http-nio-8080-exec-4] br.com.wm.appapi.security.TokenService   : JWT claims string is empty: JWT String argument cannot be null or empty.
+2022-07-15 10:09:24.885 ERROR 12552 --- [http-nio-8080-exec-5] br.com.wm.appapi.security.TokenService   : JWT claims string is empty: JWT String argument cannot be null or empty.
+2022-07-15 10:10:10.087 ERROR 12552 --- [http-nio-8080-exec-6] br.com.wm.appapi.security.TokenService   : JWT claims string is empty: JWT String argument cannot be null or empty.
+2022-07-15 10:10:10.096 ERROR 12552 --- [http-nio-8080-exec-8] br.com.wm.appapi.security.TokenService   : JWT claims string is empty: JWT String argument cannot be null or empty.
+2022-07-15 10:10:10.169 ERROR 12552 --- [http-nio-8080-exec-7] br.com.wm.appapi.security.TokenService   : JWT claims string is empty: JWT String argument cannot be null or empty.
+2022-07-15 10:20:42.015  INFO 1156 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Starting AppApiApplication using Java 1.8.0_171 on DESKTOP-E4FEAF1 with PID 1156 (C:\Fontes\FontesSTS\app-api\target\classes started by User in C:\Fontes\FontesSTS\app-api)
+2022-07-15 10:20:42.017  INFO 1156 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : The following 1 profile is active: "dev"
+2022-07-15 10:20:42.078  INFO 1156 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-15 10:20:42.079  INFO 1156 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-15 10:20:42.884  INFO 1156 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-15 10:20:42.958  INFO 1156 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63 ms. Found 2 JPA repository interfaces.
+2022-07-15 10:20:44.165  INFO 1156 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-15 10:20:44.177  INFO 1156 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-15 10:20:44.177  INFO 1156 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-15 10:20:44.257  INFO 1156 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-15 10:20:44.258  INFO 1156 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2177 ms
+2022-07-15 10:20:44.303  INFO 1156 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-15 10:20:44.497  INFO 1156 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-15 10:20:44.507  INFO 1156 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/app?createDatabaseIfNotExist=true&useSSL=false&useTimezone=true&serverTimezone=America/Sao_Paulo&allowPublicKeyRetrieval=true'
+2022-07-15 10:20:44.743  INFO 1156 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
+2022-07-15 10:20:44.744  INFO 1156 --- [restartedMain] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:mysql://localhost:3306/app (MySQL 8.0)
+2022-07-15 10:20:44.831  INFO 1156 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.035s)
+2022-07-15 10:20:44.850  INFO 1156 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `app`: 02
+2022-07-15 10:20:44.852  INFO 1156 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `app` is up to date. No migration necessary.
+2022-07-15 10:20:44.973  INFO 1156 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-15 10:20:45.044  INFO 1156 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-07-15 10:20:45.205  INFO 1156 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-15 10:20:45.325  INFO 1156 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-07-15 10:20:45.997  INFO 1156 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-15 10:20:46.008  INFO 1156 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-15 10:20:46.013  INFO 1156 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Server running in UTC timezone :Fri Jul 15 10:20:46 BRT 2022
+2022-07-15 10:20:46.598  WARN 1156 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-15 10:20:47.011  INFO 1156 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-07-15 10:20:47.237  INFO 1156 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-15 10:20:47.272  INFO 1156 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-15 10:20:47.284  INFO 1156 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Started AppApiApplication in 5.668 seconds (JVM running for 6.156)
+2022-07-15 10:20:52.075  INFO 1156 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-15 10:20:52.076  INFO 1156 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-15 10:20:52.077  INFO 1156 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-07-15 10:20:52.110 ERROR 1156 --- [http-nio-8080-exec-1] br.com.wm.appapi.security.TokenService   : JWT claims string is empty: JWT String argument cannot be null or empty.
+2022-07-15 10:20:52.218 ERROR 1156 --- [http-nio-8080-exec-2] br.com.wm.appapi.security.TokenService   : JWT claims string is empty: JWT String argument cannot be null or empty.
+2022-07-15 10:23:57.329  INFO 13992 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Starting AppApiApplication using Java 1.8.0_171 on DESKTOP-E4FEAF1 with PID 13992 (C:\Fontes\FontesSTS\app-api\target\classes started by User in C:\Fontes\FontesSTS\app-api)
+2022-07-15 10:23:57.330  INFO 13992 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : The following 1 profile is active: "dev"
+2022-07-15 10:23:57.392  INFO 13992 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-15 10:23:57.392  INFO 13992 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-15 10:23:58.166  INFO 13992 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-15 10:23:58.258  INFO 13992 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 73 ms. Found 2 JPA repository interfaces.
+2022-07-15 10:23:59.485  INFO 13992 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-15 10:23:59.497  INFO 13992 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-15 10:23:59.498  INFO 13992 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-15 10:23:59.580  INFO 13992 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-15 10:23:59.581  INFO 13992 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2188 ms
+2022-07-15 10:23:59.618  INFO 13992 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-15 10:23:59.841  INFO 13992 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-15 10:23:59.852  INFO 13992 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/app?createDatabaseIfNotExist=true&useSSL=false&useTimezone=true&serverTimezone=America/Sao_Paulo&allowPublicKeyRetrieval=true'
+2022-07-15 10:24:00.109  INFO 13992 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
+2022-07-15 10:24:00.109  INFO 13992 --- [restartedMain] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:mysql://localhost:3306/app (MySQL 8.0)
+2022-07-15 10:24:00.209  INFO 13992 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.039s)
+2022-07-15 10:24:00.230  INFO 13992 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `app`: 02
+2022-07-15 10:24:00.233  INFO 13992 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `app` is up to date. No migration necessary.
+2022-07-15 10:24:00.340  INFO 13992 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-15 10:24:00.399  INFO 13992 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-07-15 10:24:00.568  INFO 13992 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-15 10:24:00.689  INFO 13992 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-07-15 10:24:01.380  INFO 13992 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-15 10:24:01.390  INFO 13992 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-15 10:24:01.396  INFO 13992 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Server running in UTC timezone :Fri Jul 15 10:24:01 BRT 2022
+2022-07-15 10:24:02.022  WARN 13992 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-15 10:24:02.520  INFO 13992 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-07-15 10:24:02.764  INFO 13992 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-15 10:24:02.808  INFO 13992 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-15 10:24:02.820  INFO 13992 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Started AppApiApplication in 5.877 seconds (JVM running for 6.37)
+2022-07-15 10:24:20.865  INFO 13992 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-15 10:24:20.866  INFO 13992 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-15 10:24:20.868  INFO 13992 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-07-15 10:26:49.905  INFO 3308 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Starting AppApiApplication using Java 1.8.0_171 on DESKTOP-E4FEAF1 with PID 3308 (C:\Fontes\FontesSTS\app-api\target\classes started by User in C:\Fontes\FontesSTS\app-api)
+2022-07-15 10:26:49.906  INFO 3308 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : The following 1 profile is active: "dev"
+2022-07-15 10:26:49.961  INFO 3308 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-15 10:26:49.962  INFO 3308 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-15 10:26:50.780  INFO 3308 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-15 10:26:50.850  INFO 3308 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 2 JPA repository interfaces.
+2022-07-15 10:26:52.018  INFO 3308 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-15 10:26:52.031  INFO 3308 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-15 10:26:52.032  INFO 3308 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-15 10:26:52.121  INFO 3308 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-15 10:26:52.122  INFO 3308 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2159 ms
+2022-07-15 10:26:52.164  INFO 3308 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-15 10:26:52.364  INFO 3308 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-15 10:26:52.374  INFO 3308 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/app?createDatabaseIfNotExist=true&useSSL=false&useTimezone=true&serverTimezone=America/Sao_Paulo&allowPublicKeyRetrieval=true'
+2022-07-15 10:26:52.612  INFO 3308 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
+2022-07-15 10:26:52.613  INFO 3308 --- [restartedMain] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:mysql://localhost:3306/app (MySQL 8.0)
+2022-07-15 10:26:52.709  INFO 3308 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.038s)
+2022-07-15 10:26:52.727  INFO 3308 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `app`: 02
+2022-07-15 10:26:52.729  INFO 3308 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `app` is up to date. No migration necessary.
+2022-07-15 10:26:52.837  INFO 3308 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-15 10:26:52.913  INFO 3308 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-07-15 10:26:53.085  INFO 3308 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-15 10:26:53.216  INFO 3308 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-07-15 10:26:53.926  INFO 3308 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-15 10:26:53.937  INFO 3308 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-15 10:26:53.944  INFO 3308 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Server running in UTC timezone :Fri Jul 15 10:26:53 BRT 2022
+2022-07-15 10:26:54.562  WARN 3308 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-15 10:26:54.991  INFO 3308 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-07-15 10:26:55.250  INFO 3308 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-15 10:26:55.287  INFO 3308 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-15 10:26:55.299  INFO 3308 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Started AppApiApplication in 5.792 seconds (JVM running for 6.285)
+2022-07-15 10:28:58.488  INFO 13304 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Starting AppApiApplication using Java 1.8.0_171 on DESKTOP-E4FEAF1 with PID 13304 (C:\Fontes\FontesSTS\app-api\target\classes started by User in C:\Fontes\FontesSTS\app-api)
+2022-07-15 10:28:58.490  INFO 13304 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : The following 1 profile is active: "dev"
+2022-07-15 10:28:58.550  INFO 13304 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-15 10:28:58.550  INFO 13304 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-15 10:28:59.341  INFO 13304 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-15 10:28:59.414  INFO 13304 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 2 JPA repository interfaces.
+2022-07-15 10:29:00.600  INFO 13304 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-15 10:29:00.611  INFO 13304 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-15 10:29:00.612  INFO 13304 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-15 10:29:00.695  INFO 13304 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-15 10:29:00.696  INFO 13304 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2145 ms
+2022-07-15 10:29:00.736  INFO 13304 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-15 10:29:00.950  INFO 13304 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-15 10:29:00.960  INFO 13304 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/app?createDatabaseIfNotExist=true&useSSL=false&useTimezone=true&serverTimezone=America/Sao_Paulo&allowPublicKeyRetrieval=true'
+2022-07-15 10:29:01.197  INFO 13304 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
+2022-07-15 10:29:01.198  INFO 13304 --- [restartedMain] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:mysql://localhost:3306/app (MySQL 8.0)
+2022-07-15 10:29:01.278  INFO 13304 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.029s)
+2022-07-15 10:29:01.294  INFO 13304 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `app`: 02
+2022-07-15 10:29:01.296  INFO 13304 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `app` is up to date. No migration necessary.
+2022-07-15 10:29:01.417  INFO 13304 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-15 10:29:01.471  INFO 13304 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-07-15 10:29:01.657  INFO 13304 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-15 10:29:01.781  INFO 13304 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-07-15 10:29:02.489  INFO 13304 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-15 10:29:02.500  INFO 13304 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-15 10:29:02.506  INFO 13304 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Server running in UTC timezone :Fri Jul 15 10:29:02 BRT 2022
+2022-07-15 10:29:03.124  WARN 13304 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-15 10:29:03.639  INFO 13304 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-07-15 10:29:03.880  INFO 13304 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-15 10:29:03.915  INFO 13304 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-15 10:29:03.926  INFO 13304 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Started AppApiApplication in 5.826 seconds (JVM running for 6.314)
+2022-07-15 10:29:12.336  INFO 13304 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-15 10:29:12.337  INFO 13304 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-15 10:29:12.338  INFO 13304 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-07-15 10:30:02.874  INFO 10836 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Starting AppApiApplication using Java 1.8.0_171 on DESKTOP-E4FEAF1 with PID 10836 (C:\Fontes\FontesSTS\app-api\target\classes started by User in C:\Fontes\FontesSTS\app-api)
+2022-07-15 10:30:02.876  INFO 10836 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : The following 1 profile is active: "dev"
+2022-07-15 10:30:02.937  INFO 10836 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-15 10:30:02.937  INFO 10836 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-15 10:30:03.712  INFO 10836 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-15 10:30:03.793  INFO 10836 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 2 JPA repository interfaces.
+2022-07-15 10:30:04.994  INFO 10836 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-15 10:30:05.005  INFO 10836 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-15 10:30:05.006  INFO 10836 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-15 10:30:05.085  INFO 10836 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-15 10:30:05.085  INFO 10836 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2147 ms
+2022-07-15 10:30:05.127  INFO 10836 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-15 10:30:05.324  INFO 10836 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-15 10:30:05.333  INFO 10836 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/app?createDatabaseIfNotExist=true&useSSL=false&useTimezone=true&serverTimezone=America/Sao_Paulo&allowPublicKeyRetrieval=true'
+2022-07-15 10:30:05.571  INFO 10836 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
+2022-07-15 10:30:05.572  INFO 10836 --- [restartedMain] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:mysql://localhost:3306/app (MySQL 8.0)
+2022-07-15 10:30:05.658  INFO 10836 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.034s)
+2022-07-15 10:30:05.677  INFO 10836 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `app`: 02
+2022-07-15 10:30:05.679  INFO 10836 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `app` is up to date. No migration necessary.
+2022-07-15 10:30:05.796  INFO 10836 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-15 10:30:05.859  INFO 10836 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-07-15 10:30:06.020  INFO 10836 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-15 10:30:06.143  INFO 10836 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-07-15 10:30:06.812  INFO 10836 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-15 10:30:06.822  INFO 10836 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-15 10:30:06.827  INFO 10836 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Server running in UTC timezone :Fri Jul 15 10:30:06 BRT 2022
+2022-07-15 10:30:07.437  WARN 10836 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-15 10:30:07.861  INFO 10836 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-07-15 10:30:08.077  INFO 10836 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-15 10:30:08.116  INFO 10836 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-15 10:30:08.127  INFO 10836 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Started AppApiApplication in 5.643 seconds (JVM running for 6.142)
+2022-07-15 10:30:11.803  INFO 10836 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-15 10:30:11.803  INFO 10836 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-15 10:30:11.805  INFO 10836 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-07-15 10:30:32.961  INFO 10836 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-15 10:30:32.965  INFO 10836 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-15 10:30:32.976  INFO 10836 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-15 10:30:33.120  INFO 10836 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Starting server App-Api ...
+2022-07-15 10:30:33.166  INFO 10836 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Starting AppApiApplication using Java 1.8.0_171 on DESKTOP-E4FEAF1 with PID 10836 (C:\Fontes\FontesSTS\app-api\target\classes started by User in C:\Fontes\FontesSTS\app-api)
+2022-07-15 10:30:33.166  INFO 10836 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : The following 1 profile is active: "dev"
+2022-07-15 10:30:33.450  INFO 10836 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-15 10:30:33.480  INFO 10836 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 2 JPA repository interfaces.
+2022-07-15 10:30:33.648  INFO 10836 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-15 10:30:33.649  INFO 10836 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-15 10:30:33.649  INFO 10836 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-15 10:30:33.670  INFO 10836 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-15 10:30:33.670  INFO 10836 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 501 ms
+2022-07-15 10:30:33.683  INFO 10836 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-07-15 10:30:33.696  INFO 10836 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2022-07-15 10:30:33.696  INFO 10836 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/app?createDatabaseIfNotExist=true&useSSL=false&useTimezone=true&serverTimezone=America/Sao_Paulo&allowPublicKeyRetrieval=true'
+2022-07-15 10:30:33.723  INFO 10836 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
+2022-07-15 10:30:33.723  INFO 10836 --- [restartedMain] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:mysql://localhost:3306/app (MySQL 8.0)
+2022-07-15 10:30:33.757  INFO 10836 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.012s)
+2022-07-15 10:30:33.772  INFO 10836 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `app`: 02
+2022-07-15 10:30:33.774  INFO 10836 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `app` is up to date. No migration necessary.
+2022-07-15 10:30:33.802  INFO 10836 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-15 10:30:33.808  INFO 10836 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-07-15 10:30:33.907  INFO 10836 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-15 10:30:33.908  INFO 10836 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-15 10:30:33.912  INFO 10836 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Server running in UTC timezone :Fri Jul 15 10:30:33 BRT 2022
+2022-07-15 10:30:33.998  WARN 10836 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-15 10:30:34.097  INFO 10836 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-07-15 10:30:34.140  INFO 10836 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-15 10:30:34.149  INFO 10836 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-15 10:30:34.152  INFO 10836 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Started AppApiApplication in 1.026 seconds (JVM running for 32.167)
+2022-07-15 10:30:34.155  INFO 10836 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-07-15 10:30:40.605  INFO 10836 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-15 10:30:40.608  INFO 10836 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-15 10:30:40.611  INFO 10836 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-07-15 10:31:40.065  INFO 10836 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-15 10:31:40.066  INFO 10836 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2022-07-15 10:31:40.074  INFO 10836 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2022-07-15 10:31:40.212  INFO 10836 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Starting server App-Api ...
+2022-07-15 10:31:40.253  INFO 10836 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Starting AppApiApplication using Java 1.8.0_171 on DESKTOP-E4FEAF1 with PID 10836 (C:\Fontes\FontesSTS\app-api\target\classes started by User in C:\Fontes\FontesSTS\app-api)
+2022-07-15 10:31:40.254  INFO 10836 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : The following 1 profile is active: "dev"
+2022-07-15 10:31:40.494  INFO 10836 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-15 10:31:40.518  INFO 10836 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 2 JPA repository interfaces.
+2022-07-15 10:31:40.666  INFO 10836 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-15 10:31:40.667  INFO 10836 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-15 10:31:40.667  INFO 10836 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-15 10:31:40.681  INFO 10836 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-15 10:31:40.681  INFO 10836 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 423 ms
+2022-07-15 10:31:40.689  INFO 10836 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2022-07-15 10:31:40.705  INFO 10836 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2022-07-15 10:31:40.706  INFO 10836 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/app?createDatabaseIfNotExist=true&useSSL=false&useTimezone=true&serverTimezone=America/Sao_Paulo&allowPublicKeyRetrieval=true'
+2022-07-15 10:31:40.736  INFO 10836 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
+2022-07-15 10:31:40.736  INFO 10836 --- [restartedMain] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:mysql://localhost:3306/app (MySQL 8.0)
+2022-07-15 10:31:40.773  INFO 10836 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.011s)
+2022-07-15 10:31:40.785  INFO 10836 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `app`: 02
+2022-07-15 10:31:40.788  INFO 10836 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `app` is up to date. No migration necessary.
+2022-07-15 10:31:40.812  INFO 10836 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-15 10:31:40.819  INFO 10836 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-07-15 10:31:40.916  INFO 10836 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-15 10:31:40.916  INFO 10836 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-15 10:31:40.920  INFO 10836 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Server running in UTC timezone :Fri Jul 15 10:31:40 BRT 2022
+2022-07-15 10:31:40.990  WARN 10836 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-15 10:31:41.065  INFO 10836 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-07-15 10:31:41.107  INFO 10836 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-15 10:31:41.114  INFO 10836 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-15 10:31:41.117  INFO 10836 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Started AppApiApplication in 0.9 seconds (JVM running for 99.132)
+2022-07-15 10:31:41.119  INFO 10836 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-07-15 10:31:44.861  INFO 10836 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-15 10:31:44.862  INFO 10836 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-15 10:31:44.862  INFO 10836 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-07-15 10:37:04.027  INFO 7588 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Starting AppApiApplication using Java 1.8.0_171 on DESKTOP-E4FEAF1 with PID 7588 (C:\Fontes\FontesSTS\app-api\target\classes started by User in C:\Fontes\FontesSTS\app-api)
+2022-07-15 10:37:04.028  INFO 7588 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : The following 1 profile is active: "prod"
+2022-07-15 10:37:04.085  INFO 7588 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-15 10:37:04.085  INFO 7588 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-15 10:37:04.851  INFO 7588 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-15 10:37:04.926  INFO 7588 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 2 JPA repository interfaces.
+2022-07-15 10:37:06.139  INFO 7588 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-15 10:37:06.152  INFO 7588 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-15 10:37:06.152  INFO 7588 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-15 10:37:06.231  INFO 7588 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-15 10:37:06.232  INFO 7588 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2146 ms
+2022-07-15 10:37:06.269  INFO 7588 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-15 10:37:06.460  INFO 7588 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-15 10:37:06.470  INFO 7588 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/app?createDatabaseIfNotExist=true&useSSL=false&useTimezone=true&serverTimezone=America/Sao_Paulo&allowPublicKeyRetrieval=true'
+2022-07-15 10:37:06.699  INFO 7588 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
+2022-07-15 10:37:06.700  INFO 7588 --- [restartedMain] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:mysql://localhost:3306/app (MySQL 8.0)
+2022-07-15 10:37:06.786  INFO 7588 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.034s)
+2022-07-15 10:37:06.806  INFO 7588 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `app`: 02
+2022-07-15 10:37:06.808  INFO 7588 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `app` is up to date. No migration necessary.
+2022-07-15 10:37:06.910  INFO 7588 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-15 10:37:06.980  INFO 7588 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-07-15 10:37:07.157  INFO 7588 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-15 10:37:07.292  INFO 7588 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-07-15 10:37:07.982  INFO 7588 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-15 10:37:07.993  INFO 7588 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-15 10:37:08.000  INFO 7588 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Server running in UTC timezone :Fri Jul 15 10:37:08 BRT 2022
+2022-07-15 10:37:08.556  WARN 7588 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-15 10:37:08.961  INFO 7588 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-07-15 10:37:09.188  INFO 7588 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-15 10:37:09.224  INFO 7588 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-15 10:37:09.235  INFO 7588 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Started AppApiApplication in 5.603 seconds (JVM running for 6.086)
+2022-07-15 10:37:24.715  INFO 7588 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-15 10:37:24.716  INFO 7588 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-15 10:37:24.717  INFO 7588 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-07-15 11:02:06.259  INFO 13548 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Starting AppApiApplication using Java 1.8.0_171 on DESKTOP-E4FEAF1 with PID 13548 (C:\Fontes\FontesSTS\app-api\target\classes started by User in C:\Fontes\FontesSTS\app-api)
+2022-07-15 11:02:06.260  INFO 13548 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : The following 1 profile is active: "prod"
+2022-07-15 11:02:06.317  INFO 13548 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-15 11:02:06.317  INFO 13548 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-15 11:02:07.125  INFO 13548 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-15 11:02:07.197  INFO 13548 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 2 JPA repository interfaces.
+2022-07-15 11:02:08.370  INFO 13548 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-15 11:02:08.383  INFO 13548 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-15 11:02:08.383  INFO 13548 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-15 11:02:08.466  INFO 13548 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-15 11:02:08.467  INFO 13548 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2150 ms
+2022-07-15 11:02:08.505  INFO 13548 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-15 11:02:08.717  INFO 13548 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-15 11:02:08.727  INFO 13548 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/app?createDatabaseIfNotExist=true&useSSL=false&useTimezone=true&serverTimezone=America/Sao_Paulo&allowPublicKeyRetrieval=true'
+2022-07-15 11:02:08.957  INFO 13548 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
+2022-07-15 11:02:08.958  INFO 13548 --- [restartedMain] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:mysql://localhost:3306/app (MySQL 8.0)
+2022-07-15 11:02:09.042  INFO 13548 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.033s)
+2022-07-15 11:02:09.060  INFO 13548 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `app`: 02
+2022-07-15 11:02:09.062  INFO 13548 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `app` is up to date. No migration necessary.
+2022-07-15 11:02:09.185  INFO 13548 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-15 11:02:09.254  INFO 13548 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-07-15 11:02:09.421  INFO 13548 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-15 11:02:09.553  INFO 13548 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-07-15 11:02:10.245  INFO 13548 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-15 11:02:10.256  INFO 13548 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-15 11:02:10.263  INFO 13548 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Server running in UTC timezone :Fri Jul 15 11:02:10 BRT 2022
+2022-07-15 11:02:10.867  WARN 13548 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-15 11:02:11.289  INFO 13548 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-07-15 11:02:11.514  INFO 13548 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-15 11:02:11.550  INFO 13548 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-15 11:02:11.561  INFO 13548 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Started AppApiApplication in 5.694 seconds (JVM running for 6.198)
+2022-07-15 11:02:18.365  INFO 13548 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-15 11:02:18.366  INFO 13548 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-15 11:02:18.367  INFO 13548 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-07-15 11:04:57.554  INFO 6516 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Starting AppApiApplication using Java 1.8.0_171 on DESKTOP-E4FEAF1 with PID 6516 (C:\Fontes\FontesSTS\app-api\target\classes started by User in C:\Fontes\FontesSTS\app-api)
+2022-07-15 11:04:57.555  INFO 6516 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : The following 1 profile is active: "prod"
+2022-07-15 11:04:57.611  INFO 6516 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-15 11:04:57.611  INFO 6516 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-15 11:04:58.371  INFO 6516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-15 11:04:58.452  INFO 6516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 2 JPA repository interfaces.
+2022-07-15 11:04:59.636  INFO 6516 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-15 11:04:59.649  INFO 6516 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-15 11:04:59.649  INFO 6516 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-15 11:04:59.740  INFO 6516 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-15 11:04:59.741  INFO 6516 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2129 ms
+2022-07-15 11:04:59.785  INFO 6516 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-15 11:04:59.975  INFO 6516 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-15 11:04:59.985  INFO 6516 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/app?createDatabaseIfNotExist=true&useSSL=false&useTimezone=true&serverTimezone=America/Sao_Paulo&allowPublicKeyRetrieval=true'
+2022-07-15 11:05:00.214  INFO 6516 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
+2022-07-15 11:05:00.214  INFO 6516 --- [restartedMain] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:mysql://localhost:3306/app (MySQL 8.0)
+2022-07-15 11:05:00.296  INFO 6516 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.030s)
+2022-07-15 11:05:00.314  INFO 6516 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `app`: 02
+2022-07-15 11:05:00.317  INFO 6516 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `app` is up to date. No migration necessary.
+2022-07-15 11:05:00.445  INFO 6516 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-15 11:05:00.500  INFO 6516 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-07-15 11:05:00.664  INFO 6516 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-15 11:05:00.795  INFO 6516 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-07-15 11:05:01.483  INFO 6516 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-15 11:05:01.493  INFO 6516 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-15 11:05:01.498  INFO 6516 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Server running in UTC timezone :Fri Jul 15 11:05:01 BRT 2022
+2022-07-15 11:05:02.107  WARN 6516 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-15 11:05:02.536  INFO 6516 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-07-15 11:05:02.761  INFO 6516 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-15 11:05:02.798  INFO 6516 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-15 11:05:02.811  INFO 6516 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Started AppApiApplication in 5.652 seconds (JVM running for 6.154)
+2022-07-15 11:05:07.937  INFO 6516 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-15 11:05:07.937  INFO 6516 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-15 11:05:07.939  INFO 6516 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-07-15 11:13:28.774  INFO 1392 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Starting AppApiApplication using Java 1.8.0_171 on DESKTOP-E4FEAF1 with PID 1392 (C:\Fontes\FontesSTS\app-api\target\classes started by User in C:\Fontes\FontesSTS\app-api)
+2022-07-15 11:13:28.775  INFO 1392 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : The following 1 profile is active: "prod"
+2022-07-15 11:13:28.836  INFO 1392 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-15 11:13:28.837  INFO 1392 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-15 11:13:29.597  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-15 11:13:29.677  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 2 JPA repository interfaces.
+2022-07-15 11:13:30.879  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-15 11:13:30.891  INFO 1392 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-15 11:13:30.891  INFO 1392 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-15 11:13:30.972  INFO 1392 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-15 11:13:30.973  INFO 1392 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2136 ms
+2022-07-15 11:13:31.016  INFO 1392 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-15 11:13:31.231  INFO 1392 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-15 11:13:31.240  INFO 1392 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/app?createDatabaseIfNotExist=true&useSSL=false&useTimezone=true&serverTimezone=America/Sao_Paulo&allowPublicKeyRetrieval=true'
+2022-07-15 11:13:31.471  INFO 1392 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
+2022-07-15 11:13:31.472  INFO 1392 --- [restartedMain] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:mysql://localhost:3306/app (MySQL 8.0)
+2022-07-15 11:13:31.566  INFO 1392 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.039s)
+2022-07-15 11:13:31.585  INFO 1392 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `app`: 02
+2022-07-15 11:13:31.587  INFO 1392 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `app` is up to date. No migration necessary.
+2022-07-15 11:13:31.702  INFO 1392 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-15 11:13:31.755  INFO 1392 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-07-15 11:13:31.913  INFO 1392 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-15 11:13:32.032  INFO 1392 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-07-15 11:13:32.729  INFO 1392 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-15 11:13:32.742  INFO 1392 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-15 11:13:32.748  INFO 1392 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Server running in UTC timezone :Fri Jul 15 11:13:32 BRT 2022
+2022-07-15 11:13:33.405  WARN 1392 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-15 11:13:33.829  INFO 1392 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-07-15 11:13:34.060  INFO 1392 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-15 11:13:34.092  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-15 11:13:34.102  INFO 1392 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Started AppApiApplication in 5.724 seconds (JVM running for 6.207)
+2022-07-15 11:13:39.656  INFO 1392 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-15 11:13:39.657  INFO 1392 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-15 11:13:39.658  INFO 1392 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-07-15 11:24:59.074  INFO 1392 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-15 11:24:59.078  INFO 1392 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-15 11:24:59.089  INFO 1392 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-15 11:24:59.229  INFO 1392 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Starting server App-Api ...
+2022-07-15 11:24:59.276  INFO 1392 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Starting AppApiApplication using Java 1.8.0_171 on DESKTOP-E4FEAF1 with PID 1392 (C:\Fontes\FontesSTS\app-api\target\classes started by User in C:\Fontes\FontesSTS\app-api)
+2022-07-15 11:24:59.276  INFO 1392 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : The following 1 profile is active: "prod"
+2022-07-15 11:24:59.543  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-15 11:24:59.571  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 2 JPA repository interfaces.
+2022-07-15 11:24:59.752  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-15 11:24:59.753  INFO 1392 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-15 11:24:59.753  INFO 1392 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-15 11:24:59.774  INFO 1392 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-15 11:24:59.774  INFO 1392 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 495 ms
+2022-07-15 11:24:59.786  INFO 1392 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-07-15 11:24:59.801  INFO 1392 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2022-07-15 11:24:59.801  INFO 1392 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/app?createDatabaseIfNotExist=true&useSSL=false&useTimezone=true&serverTimezone=America/Sao_Paulo&allowPublicKeyRetrieval=true'
+2022-07-15 11:24:59.836  INFO 1392 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
+2022-07-15 11:24:59.836  INFO 1392 --- [restartedMain] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:mysql://localhost:3306/app (MySQL 8.0)
+2022-07-15 11:24:59.869  INFO 1392 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.013s)
+2022-07-15 11:24:59.887  INFO 1392 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `app`: 02
+2022-07-15 11:24:59.889  INFO 1392 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `app` is up to date. No migration necessary.
+2022-07-15 11:24:59.930  INFO 1392 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-15 11:24:59.940  INFO 1392 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-07-15 11:25:00.054  INFO 1392 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-15 11:25:00.054  INFO 1392 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-15 11:25:00.060  INFO 1392 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Server running in UTC timezone :Fri Jul 15 11:25:00 BRT 2022
+2022-07-15 11:25:00.178  WARN 1392 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-15 11:25:00.314  INFO 1392 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-07-15 11:25:00.377  INFO 1392 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-15 11:25:00.390  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-15 11:25:00.394  INFO 1392 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Started AppApiApplication in 1.159 seconds (JVM running for 690.443)
+2022-07-15 11:25:00.398  INFO 1392 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-07-15 11:25:04.244  INFO 1392 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-15 11:25:04.245  INFO 1392 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-15 11:25:04.247  INFO 1392 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-07-15 11:35:12.436  INFO 1392 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-15 11:35:12.437  INFO 1392 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2022-07-15 11:35:12.444  INFO 1392 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2022-07-15 11:35:12.580  INFO 1392 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Starting server App-Api ...
+2022-07-15 11:35:12.654  INFO 1392 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Starting AppApiApplication using Java 1.8.0_171 on DESKTOP-E4FEAF1 with PID 1392 (C:\Fontes\FontesSTS\app-api\target\classes started by User in C:\Fontes\FontesSTS\app-api)
+2022-07-15 11:35:12.655  INFO 1392 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : The following 1 profile is active: "prod"
+2022-07-15 11:35:12.906  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-15 11:35:12.932  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 2 JPA repository interfaces.
+2022-07-15 11:35:13.118  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-15 11:35:13.119  INFO 1392 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-15 11:35:13.119  INFO 1392 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-15 11:35:13.135  INFO 1392 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-15 11:35:13.136  INFO 1392 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 476 ms
+2022-07-15 11:35:13.149  INFO 1392 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2022-07-15 11:35:13.165  INFO 1392 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2022-07-15 11:35:13.166  INFO 1392 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/app?createDatabaseIfNotExist=true&useSSL=false&useTimezone=true&serverTimezone=America/Sao_Paulo&allowPublicKeyRetrieval=true'
+2022-07-15 11:35:13.191  INFO 1392 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
+2022-07-15 11:35:13.191  INFO 1392 --- [restartedMain] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:mysql://localhost:3306/app (MySQL 8.0)
+2022-07-15 11:35:13.229  INFO 1392 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.014s)
+2022-07-15 11:35:13.246  INFO 1392 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `app`: 02
+2022-07-15 11:35:13.248  INFO 1392 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `app` is up to date. No migration necessary.
+2022-07-15 11:35:13.269  INFO 1392 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-15 11:35:13.276  INFO 1392 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-07-15 11:35:13.373  INFO 1392 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-15 11:35:13.374  INFO 1392 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-15 11:35:13.378  INFO 1392 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Server running in UTC timezone :Fri Jul 15 11:35:13 BRT 2022
+2022-07-15 11:35:13.462  WARN 1392 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-15 11:35:13.559  INFO 1392 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-07-15 11:35:13.613  INFO 1392 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-15 11:35:13.621  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-15 11:35:13.624  INFO 1392 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Started AppApiApplication in 1.033 seconds (JVM running for 1303.673)
+2022-07-15 11:35:13.625  INFO 1392 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-07-15 11:35:18.279  INFO 1392 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-15 11:35:18.281  INFO 1392 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-15 11:35:18.283  INFO 1392 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-07-15 11:38:09.566  INFO 1392 --- [Thread-12] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-15 11:38:09.567  INFO 1392 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2022-07-15 11:38:09.575  INFO 1392 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2022-07-15 11:38:09.740  INFO 1392 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Starting server App-Api ...
+2022-07-15 11:38:10.343  INFO 1392 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Starting AppApiApplication using Java 1.8.0_171 on DESKTOP-E4FEAF1 with PID 1392 (C:\Fontes\FontesSTS\app-api\target\classes started by User in C:\Fontes\FontesSTS\app-api)
+2022-07-15 11:38:10.344  INFO 1392 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : The following 1 profile is active: "prod"
+2022-07-15 11:38:10.569  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-15 11:38:10.593  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 2 JPA repository interfaces.
+2022-07-15 11:38:10.717  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-15 11:38:10.718  INFO 1392 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-15 11:38:10.718  INFO 1392 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-15 11:38:10.732  INFO 1392 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-15 11:38:10.732  INFO 1392 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 385 ms
+2022-07-15 11:38:10.742  INFO 1392 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2022-07-15 11:38:10.757  INFO 1392 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2022-07-15 11:38:10.757  INFO 1392 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/app?createDatabaseIfNotExist=true&useSSL=false&useTimezone=true&serverTimezone=America/Sao_Paulo&allowPublicKeyRetrieval=true'
+2022-07-15 11:38:10.779  INFO 1392 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
+2022-07-15 11:38:10.779  INFO 1392 --- [restartedMain] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:mysql://localhost:3306/app (MySQL 8.0)
+2022-07-15 11:38:10.814  INFO 1392 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.012s)
+2022-07-15 11:38:10.828  INFO 1392 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `app`: 02
+2022-07-15 11:38:10.830  INFO 1392 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `app` is up to date. No migration necessary.
+2022-07-15 11:38:10.858  INFO 1392 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-15 11:38:10.863  INFO 1392 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-07-15 11:38:10.958  INFO 1392 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-15 11:38:10.960  INFO 1392 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-15 11:38:10.966  INFO 1392 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Server running in UTC timezone :Fri Jul 15 11:38:10 BRT 2022
+2022-07-15 11:38:11.050  WARN 1392 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-15 11:38:11.133  INFO 1392 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-07-15 11:38:11.171  INFO 1392 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-15 11:38:11.178  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-15 11:38:11.182  INFO 1392 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Started AppApiApplication in 1.438 seconds (JVM running for 1481.23)
+2022-07-15 11:38:11.183  INFO 1392 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-07-15 11:38:15.138  INFO 1392 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-15 11:38:15.140  INFO 1392 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-15 11:38:15.143  INFO 1392 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-07-15 11:39:30.061  INFO 1392 --- [Thread-16] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-15 11:39:30.062  INFO 1392 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2022-07-15 11:39:30.070  INFO 1392 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2022-07-15 11:39:30.222  INFO 1392 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Starting server App-Api ...
+2022-07-15 11:39:30.265  INFO 1392 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Starting AppApiApplication using Java 1.8.0_171 on DESKTOP-E4FEAF1 with PID 1392 (C:\Fontes\FontesSTS\app-api\target\classes started by User in C:\Fontes\FontesSTS\app-api)
+2022-07-15 11:39:30.265  INFO 1392 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : The following 1 profile is active: "prod"
+2022-07-15 11:39:30.524  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-15 11:39:30.551  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 2 JPA repository interfaces.
+2022-07-15 11:39:30.711  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-15 11:39:30.711  INFO 1392 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-15 11:39:30.712  INFO 1392 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-15 11:39:30.728  INFO 1392 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-15 11:39:30.728  INFO 1392 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 459 ms
+2022-07-15 11:39:30.739  INFO 1392 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2022-07-15 11:39:30.754  INFO 1392 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2022-07-15 11:39:30.754  INFO 1392 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/app?createDatabaseIfNotExist=true&useSSL=false&useTimezone=true&serverTimezone=America/Sao_Paulo&allowPublicKeyRetrieval=true'
+2022-07-15 11:39:30.781  INFO 1392 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
+2022-07-15 11:39:30.781  INFO 1392 --- [restartedMain] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:mysql://localhost:3306/app (MySQL 8.0)
+2022-07-15 11:39:30.818  INFO 1392 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.013s)
+2022-07-15 11:39:30.833  INFO 1392 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `app`: 02
+2022-07-15 11:39:30.835  INFO 1392 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `app` is up to date. No migration necessary.
+2022-07-15 11:39:30.861  INFO 1392 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-15 11:39:30.869  INFO 1392 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-07-15 11:39:30.968  INFO 1392 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-15 11:39:30.969  INFO 1392 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-15 11:39:30.975  INFO 1392 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Server running in UTC timezone :Fri Jul 15 11:39:30 BRT 2022
+2022-07-15 11:39:31.064  WARN 1392 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-15 11:39:31.156  INFO 1392 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-07-15 11:39:31.206  INFO 1392 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-15 11:39:31.213  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-15 11:39:31.216  INFO 1392 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Started AppApiApplication in 0.99 seconds (JVM running for 1561.265)
+2022-07-15 11:39:31.217  INFO 1392 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-07-15 11:39:39.855  INFO 1392 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-15 11:39:39.856  INFO 1392 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-15 11:39:39.857  INFO 1392 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-07-15 11:47:25.062  INFO 1392 --- [Thread-20] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-15 11:47:25.063  INFO 1392 --- [Thread-20] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2022-07-15 11:47:25.070  INFO 1392 --- [Thread-20] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2022-07-15 11:47:25.178  INFO 1392 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Starting server App-Api ...
+2022-07-15 11:47:25.215  INFO 1392 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Starting AppApiApplication using Java 1.8.0_171 on DESKTOP-E4FEAF1 with PID 1392 (C:\Fontes\FontesSTS\app-api\target\classes started by User in C:\Fontes\FontesSTS\app-api)
+2022-07-15 11:47:25.215  INFO 1392 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : The following 1 profile is active: "prod"
+2022-07-15 11:47:25.452  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-15 11:47:25.479  INFO 1392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 2 JPA repository interfaces.
+2022-07-15 11:47:25.631  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-15 11:47:25.632  INFO 1392 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-15 11:47:25.632  INFO 1392 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-15 11:47:25.647  INFO 1392 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-15 11:47:25.647  INFO 1392 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 428 ms
+2022-07-15 11:47:25.658  INFO 1392 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2022-07-15 11:47:25.672  INFO 1392 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2022-07-15 11:47:25.672  INFO 1392 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/app?createDatabaseIfNotExist=true&useSSL=false&useTimezone=true&serverTimezone=America/Sao_Paulo&allowPublicKeyRetrieval=true'
+2022-07-15 11:47:25.701  INFO 1392 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
+2022-07-15 11:47:25.701  INFO 1392 --- [restartedMain] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:mysql://localhost:3306/app (MySQL 8.0)
+2022-07-15 11:47:25.736  INFO 1392 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.013s)
+2022-07-15 11:47:25.752  INFO 1392 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `app`: 02
+2022-07-15 11:47:25.755  INFO 1392 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `app` is up to date. No migration necessary.
+2022-07-15 11:47:25.779  INFO 1392 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-15 11:47:25.787  INFO 1392 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-07-15 11:47:25.883  INFO 1392 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-15 11:47:25.883  INFO 1392 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-15 11:47:25.889  INFO 1392 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Server running in UTC timezone :Fri Jul 15 11:47:25 BRT 2022
+2022-07-15 11:47:25.974  WARN 1392 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-15 11:47:26.064  INFO 1392 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-07-15 11:47:26.108  INFO 1392 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-15 11:47:26.115  INFO 1392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-15 11:47:26.118  INFO 1392 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Started AppApiApplication in 0.935 seconds (JVM running for 2036.166)
+2022-07-15 11:47:26.119  INFO 1392 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-07-15 11:47:31.925  INFO 1392 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-15 11:47:31.926  INFO 1392 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-15 11:47:31.927  INFO 1392 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-07-15 15:21:13.174  INFO 10196 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Starting AppApiApplication using Java 1.8.0_171 on DESKTOP-E4FEAF1 with PID 10196 (C:\Fontes\FontesSTS\app-api\target\classes started by User in C:\Fontes\FontesSTS\app-api)
+2022-07-15 15:21:13.199  INFO 10196 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : The following 1 profile is active: "prod"
+2022-07-15 15:21:13.261  INFO 10196 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-15 15:21:13.261  INFO 10196 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-15 15:21:14.035  INFO 10196 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-15 15:21:14.112  INFO 10196 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 2 JPA repository interfaces.
+2022-07-15 15:21:15.285  INFO 10196 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-15 15:21:15.296  INFO 10196 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-15 15:21:15.297  INFO 10196 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-15 15:21:15.378  INFO 10196 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-15 15:21:15.379  INFO 10196 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2117 ms
+2022-07-15 15:21:15.415  INFO 10196 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-15 15:21:15.626  INFO 10196 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-15 15:21:15.635  INFO 10196 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/app?createDatabaseIfNotExist=true&useSSL=false&useTimezone=true&serverTimezone=America/Sao_Paulo&allowPublicKeyRetrieval=true'
+2022-07-15 15:21:15.867  INFO 10196 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
+2022-07-15 15:21:15.867  INFO 10196 --- [restartedMain] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:mysql://localhost:3306/app (MySQL 8.0)
+2022-07-15 15:21:15.954  INFO 10196 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.032s)
+2022-07-15 15:21:15.975  INFO 10196 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `app`: 02
+2022-07-15 15:21:15.977  INFO 10196 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `app` is up to date. No migration necessary.
+2022-07-15 15:21:16.101  INFO 10196 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-15 15:21:16.180  INFO 10196 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-07-15 15:21:16.372  INFO 10196 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-15 15:21:16.687  INFO 10196 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-07-15 15:21:17.684  INFO 10196 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-15 15:21:17.696  INFO 10196 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-15 15:21:17.701  INFO 10196 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Server running in UTC timezone :Fri Jul 15 15:21:17 BRT 2022
+2022-07-15 15:21:18.432  WARN 10196 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-15 15:21:18.895  INFO 10196 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-07-15 15:21:19.128  INFO 10196 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-15 15:21:19.219  INFO 10196 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-15 15:21:19.231  INFO 10196 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Started AppApiApplication in 6.452 seconds (JVM running for 7.131)
+2022-07-15 15:21:39.488  INFO 10196 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-15 15:21:39.489  INFO 10196 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-15 15:21:39.490  INFO 10196 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-07-15 15:23:39.712  INFO 2252 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Starting AppApiApplication using Java 1.8.0_171 on DESKTOP-E4FEAF1 with PID 2252 (C:\Fontes\FontesSTS\app-api\target\classes started by User in C:\Fontes\FontesSTS\app-api)
+2022-07-15 15:23:39.714  INFO 2252 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : The following 1 profile is active: "prod"
+2022-07-15 15:23:39.779  INFO 2252 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-15 15:23:39.780  INFO 2252 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-15 15:23:40.614  INFO 2252 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-15 15:23:40.686  INFO 2252 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 2 JPA repository interfaces.
+2022-07-15 15:23:41.880  INFO 2252 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-15 15:23:41.892  INFO 2252 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-15 15:23:41.892  INFO 2252 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-15 15:23:41.975  INFO 2252 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-15 15:23:41.976  INFO 2252 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2196 ms
+2022-07-15 15:23:42.017  INFO 2252 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-15 15:23:42.212  INFO 2252 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-15 15:23:42.221  INFO 2252 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/app?createDatabaseIfNotExist=true&useSSL=false&useTimezone=true&serverTimezone=America/Sao_Paulo&allowPublicKeyRetrieval=true'
+2022-07-15 15:23:42.445  INFO 2252 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
+2022-07-15 15:23:42.446  INFO 2252 --- [restartedMain] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:mysql://localhost:3306/app (MySQL 8.0)
+2022-07-15 15:23:42.528  INFO 2252 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.030s)
+2022-07-15 15:23:42.545  INFO 2252 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `app`: 02
+2022-07-15 15:23:42.547  INFO 2252 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `app` is up to date. No migration necessary.
+2022-07-15 15:23:42.658  INFO 2252 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-15 15:23:42.743  INFO 2252 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-07-15 15:23:42.910  INFO 2252 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-15 15:23:43.033  INFO 2252 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-07-15 15:23:43.751  INFO 2252 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-15 15:23:43.762  INFO 2252 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-15 15:23:43.767  INFO 2252 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Server running in UTC timezone :Fri Jul 15 15:23:43 BRT 2022
+2022-07-15 15:23:44.357  WARN 2252 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-15 15:23:44.756  INFO 2252 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-07-15 15:23:44.971  INFO 2252 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-15 15:23:45.005  INFO 2252 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-15 15:23:45.015  INFO 2252 --- [restartedMain] br.com.wm.appapi.AppApiApplication       : Started AppApiApplication in 5.697 seconds (JVM running for 6.162)
+2022-07-15 15:23:49.767  INFO 2252 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-15 15:23:49.767  INFO 2252 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-15 15:23:49.769  INFO 2252 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-07-15 15:39:07.067  INFO 2428 --- [main] br.com.wm.appapi.AppApiApplicationTests  : Starting AppApiApplicationTests using Java 17.0.3.1 on DESKTOP-E4FEAF1 with PID 2428 (started by User in C:\Fontes\FontesSTS\app-api)
+2022-07-15 15:39:07.070  INFO 2428 --- [main] br.com.wm.appapi.AppApiApplicationTests  : The following 1 profile is active: "test"
+2022-07-15 15:39:08.101  INFO 2428 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-15 15:39:08.185  INFO 2428 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 2 JPA repository interfaces.
+2022-07-15 15:39:08.990  INFO 2428 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-15 15:39:09.412  INFO 2428 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-15 15:39:09.428  INFO 2428 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.5 by Redgate
+2022-07-15 15:39:09.429  INFO 2428 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:h2:mem:db (H2 1.4)
+2022-07-15 15:39:09.521  INFO 2428 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.039s)
+2022-07-15 15:39:09.539  INFO 2428 --- [main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2022-07-15 15:39:09.600  INFO 2428 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
+2022-07-15 15:39:09.611  INFO 2428 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "01 - criar tabelas usuario perfil"
+2022-07-15 15:39:09.654  INFO 2428 --- [main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "02 - criar tabela item"
+2022-07-15 15:39:09.672  INFO 2428 --- [main] o.f.core.internal.command.DbMigrate      : Successfully applied 2 migrations to schema "PUBLIC", now at version v02 (execution time 00:00.079s)
+2022-07-15 15:39:09.866  INFO 2428 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-15 15:39:09.946  INFO 2428 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-07-15 15:39:10.184  INFO 2428 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-15 15:39:10.435  INFO 2428 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-07-15 15:39:11.295  INFO 2428 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-15 15:39:11.305  INFO 2428 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-15 15:39:11.313  INFO 2428 --- [main] br.com.wm.appapi.AppApiApplication       : Server running in UTC timezone :Fri Jul 15 15:39:11 BRT 2022
+2022-07-15 15:39:11.841  WARN 2428 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-15 15:39:12.788  INFO 2428 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-07-15 15:39:13.395  INFO 2428 --- [main] br.com.wm.appapi.AppApiApplicationTests  : Started AppApiApplicationTests in 6.825 seconds (JVM running for 8.35)
+2022-07-15 15:39:13.820  INFO 2428 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-15 15:39:13.823  INFO 2428 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-15 15:39:13.826  INFO 2428 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

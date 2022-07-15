@@ -50,6 +50,10 @@ public class TokenService {
 	}
 
 	public boolean isTokenValido(String token) {
+		if (token == null || token.trim().isEmpty()) {
+	        return false;
+	    }
+		
 		try {
 			Jwts.parser().setSigningKey(this.secret).parseClaimsJws(token);
 			return true;
