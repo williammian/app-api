@@ -1,0 +1,69 @@
+version: '3'
+
+services:
+  bd:
+    container_name: app-bd
+    image: arm64v8/mysql:8
+    healthcheck:
+      test: mysql --protocol=socket -hlocalhost -uroot -p$$MYSQL_ROOT_PASSWORD -e 'SELECT 1'
+      interval: 20s
+      timeout: 10s
+      retries: 120
+    environment:
+      MYSQL_ROOT_PASSWORD: "root123"
+      MYSQL_USER: "user"
+      MYSQL_PASSWORD: "user123"
+      MYSQL_DATABASE: "app"
+      MYSQL_ROOT_HOST: "%"
+    ports:
+      - 3306:3306
+    networks:
+      - app-network
+
+  api:
+    container_name: app-api
+    image: williammian/app-api:arm64v8
+    environment:
+      DATABASE_USERNAME: "user"
+      DATABASE_PASSWORD: "user123"
+      DATABASE_URL: "jdbc:mysql://app-bd:3306/app?createDatabaseIfNotExist=true&useSSL=false&useTimezone=true&serverTimezone=America/Sao_Paulo&allowPublicKeyRetrieval=true"
+      SERVER_PORT: "8080"
+    ports:
+      - 8080:8080
+    depends_on:
+      bd:
+        condition: service_healthy
+    networks:
+      - app-network
+
+  web:
+    container_name: app-web
+    image: williammian/app-web:arm64v8
+    environment:
+      API_URL: "https://meusite.com.br/api"
+    volumes:
+      - ./data/nginx:/etc/nginx/conf.d
+      - ./data/certbot/conf:/etc/letsencrypt
+      - ./data/certbot/www:/var/www/certbot
+    ports:
+      - "80:80"
+      - "443:443"
+    depends_on:
+      - api
+    networks:
+      - app-network
+
+  certbot:
+    container_name: certbot
+    image: certbot/certbot
+    restart: unless-stopped
+    volumes:
+      - ./data/certbot/conf:/etc/letsencrypt
+      - ./data/certbot/www:/var/www/certbot
+    networks:
+      - app-network
+    entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done;'"
+
+networks:
+  app-network:
+    driver: bridge

@@ -17,7 +17,7 @@ import br.com.wm.appapi.dto.LoginForm;
 import br.com.wm.appapi.dto.TokenDto;
 import br.com.wm.appapi.exception.ValidacaoException;
 
-@RestController
+@RestController()
 @RequestMapping("/auth")
 public class AutenticacaoResource {
 	

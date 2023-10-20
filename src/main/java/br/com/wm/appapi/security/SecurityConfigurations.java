@@ -56,7 +56,10 @@ public class SecurityConfigurations extends WebSecurityConfigurerAdapter {
 	}
 	
 	public static void main(String[] args) {
-		System.out.println(new BCryptPasswordEncoder().encode("123456"));
+		//System.out.println(new BCryptPasswordEncoder().encode("123456"));
+		
+		boolean isOk = new BCryptPasswordEncoder().matches("123456", "$2a$10$9NBMiVYe./TMCds17ihkWuLhjBIssUgHC3crWFrFANPgXipj46xvW");
+		System.out.println(isOk);
 	}
 
 }

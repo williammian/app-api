@@ -35,3 +35,9 @@ docker run -p 8080:8080 -e DATABASE_URL="jdbc:mysql://app-bd:3306/app?createData
 
 
 ---------------------------------------------------------------
+
+Construir imagem para múltiplas plataformas
+
+docker buildx build --platform linux/amd64,linux/arm64,linux/arm/v7 -t williammian/app-api:latest --push .
+
+---------------------------------------------------------------
