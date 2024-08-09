@@ -1,0 +1,17 @@
+mockapi.io
+
+O MockAPI (mockapi.io) é uma ferramenta que permite criar APIs falsas para fins de desenvolvimento e teste.
+Ele é bastante útil quando você está desenvolvendo uma aplicação e precisa de uma API para simular respostas, 
+mas ainda não tem uma API real ou está esperando que a API real esteja pronta.
+
+Com o MockAPI, você pode criar endpoints, definir os dados que eles devem retornar e até configurar diferentes 
+cenários de resposta, como erros ou diferentes tipos de dados. Isso ajuda a testar a integração da sua aplicação 
+com a API sem depender de uma API funcional real.
+
+Alguns recursos comuns do MockAPI incluem:
+
+Criação de Endpoints: Você pode definir diferentes rotas e métodos HTTP (GET, POST, PUT, DELETE, etc.).
+Geração de Dados: Permite a criação de dados de exemplo que podem ser retornados pela API.
+Simulação de Erros: Você pode configurar os endpoints para retornar erros específicos para testar o tratamento de erros na sua aplicação.
+Configuração de Tempo de Resposta: Pode simular latência para testar como sua aplicação lida com tempos de resposta variados.
+É uma ferramenta muito útil para equipes de desenvolvimento e testes, pois ajuda a isolar e testar a lógica de integração com a API antes que a API real esteja disponível.
